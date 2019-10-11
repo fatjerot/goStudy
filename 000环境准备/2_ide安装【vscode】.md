@@ -1,4 +1,4 @@
-# ide安装【vscode】
+# vscode + golang
 
 1. 下载解压，然后就可以直接运行
    ```
@@ -7,7 +7,7 @@
    cd VSCode-linux-x64 && ./code
    ```
 2. 安装插件：`Go`，`Chinese`，`vscode-Icons`，`filesize`，`Code Runner`，`GitLens`
-3. 1. 为了适配gomod，安装`gopls`
+3. 为了适配`go mod`，安装`gopls`
    ```
    go get golang.org/x/tools/gopls@latest
    ```
@@ -59,8 +59,8 @@
         }
     }
    ```
-5. vscode会自动提示装一些插件的。
-6. 安装go的相关辅助命令（ctrl + shift + p --> go:install/update tools... --> 全选组件安装）。==注意！golang版本升级后，需要update一下这些插件，最好把$GOPATH/bin下的插件都更新一下！==
+5. vscode会自动提示装一些插件，安装即可。
+6. 安装go的相关辅助命令（ctrl + shift + p --> go:install/update tools --> 全选组件安装）。==注意！golang版本升级后，需要update一下这些插件，最好把$GOPATH/bin下的插件都更新一下！==
 7. 这个组件`golang.org/x/tools/cmd/gorename`安装失败需要手动处理
    ```
    cd /home/yjx/Repository/code/golang/package && mkdir -p src/golang.org/x/ && cd src/golang.org/x/

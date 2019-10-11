@@ -90,3 +90,15 @@ export GOPROXY=https://goproxy.cn,direct
 ```
 source ~/.bash_profile
 ```
+
+## 依赖管理
+
+### go版本管理
+
+可以使用`gvm`插件对go版本进行管理，但我还是习惯手动编译新的版本，然后再改环境变量，切换go版本。
+
+### 包依赖管理
+
+以前用的都是godep等工具进行管理，自go1.11 `go mod`出现，其他都可以放弃了，用起来不要太爽。
+
+详细了解可参考文章：[干货满满的 Go Modules 和 goproxy.cn](https://github.com/EDDYCJY/blog/blob/master/talk/goproxy-cn.md)
