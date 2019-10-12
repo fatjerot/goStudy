@@ -7,8 +7,6 @@
 
 ### 2 基础学习
 
-项目结构
-
 每个子目录对应着下面的介绍，每个子目录里都有相应的测试方法，通过根目录的`main.go`调用
 
 - [1 基本结构和命名规范和基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/001basic_datatype)
