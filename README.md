@@ -2,14 +2,13 @@
 
 ### 1 环境准备
 
-- [go安装](https://github.com/fatjerot/goStudyBasic/blob/master/000%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/1_GO%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
-- [ide工具安装](https://github.com/fatjerot/goStudyBasic/blob/master/000%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/2_ide%E5%AE%89%E8%A3%85%E3%80%90vscode%E3%80%91.md)
+- [go安装](https://github.com/fatjerot/goStudyBasic/blob/master/000pre_env/1_go_install.md)
+- [ide工具安装](https://github.com/fatjerot/goStudyBasic/blob/master/000pre_env/2_vscode_go.md)
 
 ### 2 基础学习
 
-- 第一个go程序
-- 基本结构和基本数据类型
-- 控制结构
+- [1 基本结构和命名规范和基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/001basic_datatype/README.md)
+- [2 控制循环语句]()
 - 函数
 - 数组和切片
 - map
