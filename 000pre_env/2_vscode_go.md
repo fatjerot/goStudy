@@ -1,5 +1,7 @@
 # vscode + golang
 
+> 注意：还是用goland吧，vscode对`go mod`创建的项目的包引用的支持不是很好，一旦项目结构复杂就出现各种问题，目前还没研究明白
+
 1. 下载解压，然后就可以直接运行
    ```
    wget https://vscode.cdn.azure.cn/stable/b37e54c98e1a74ba89e03073e5a3761284e3ffb0/code-stable-1568209119.tar.gz
