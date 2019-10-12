@@ -7,7 +7,7 @@
 
 ### 2 基础学习
 
-- [1 基本结构和命名规范和基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/001basic_datatype/README.md)
+- [1 基本结构和命名规范和基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/001basic_datatype)
 - [2 控制循环语句]()
 - 函数
 - 数组和切片
