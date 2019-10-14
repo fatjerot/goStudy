@@ -7,8 +7,14 @@
 
 ### 2 基础学习
 
-- [1 基本结构和命名规范和基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/001basic_datatype/README.md)
-- [2 控制循环语句]()
+- [1 基本结构和命名规范](https://github.com/fatjerot/goStudyBasic/blob/master/001first)
+- [2 语言基础](https://github.com/fatjerot/goStudyBasic/blob/master/002basic)
+  - 基本数据类型
+  - 常量
+  - 变量
+  - 运算符
+  - 时间和日期
+  - 指针
 - 函数
 - 数组和切片
 - map
