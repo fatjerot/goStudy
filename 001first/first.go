@@ -5,7 +5,7 @@ import (
 	"go_study_basic/001first/testinit"
 )
 
-// 第一个go程序
+// Hello 第一个go程序
 func Hello() {
 	testinit.Testinit()
 	fmt.Printf("hello golang !\n")
