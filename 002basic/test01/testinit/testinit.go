@@ -11,5 +11,5 @@ func init() {
 
 // Testinit 必须有被外部引用的方法才会初始化
 func Testinit() {
-	fmt.Printf("testinit\n")
+	fmt.Printf("test01\n")
 }

@@ -1,4 +1,4 @@
-# go语言学习：基础
+# go语言学习
 
 ### 1 环境准备
 
@@ -8,10 +8,9 @@
 ### 2 基础学习
 
 - [1 基本结构和命名规范](https://github.com/fatjerot/goStudyBasic/blob/master/001first)
-- [2 语言基础](https://github.com/fatjerot/goStudyBasic/blob/master/002basic)
-  - 基本数据类型
-  - 常量
+- [2 基本数据类型](https://github.com/fatjerot/goStudyBasic/blob/master/002basic)
   - 变量
+  - 常量
   - 运算符
   - 时间和日期
   - 指针

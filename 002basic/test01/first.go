@@ -1,8 +1,8 @@
-package first
+package test01
 
 import (
 	"fmt"
-	"go_study_basic/001first/testinit"
+	"go_study_basic/002basic/test01/testinit"
 )
 
 // Hello 第一个go程序
