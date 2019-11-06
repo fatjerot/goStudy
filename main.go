@@ -3,7 +3,8 @@ package main
 
 import (
 	"fmt"
-	first "go_study_basic/001first"
+	"go_study_basic/002basic/test01"
+	"go_study_basic/002basic/test02"
 )
 
 func init() {
@@ -13,5 +14,7 @@ func init() {
 func main() {
 	fmt.Printf("###### main程序 start！\n")
 	fmt.Printf("===================第一个golang程序===================\n")
-	first.Hello()
+	test01.Hello()
+	fmt.Printf("\n===================变量===================\n")
+	test02.TestVar()
 }
