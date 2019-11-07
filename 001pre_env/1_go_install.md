@@ -51,10 +51,11 @@ Go高版本的编译过程需要Go1.4的二进制来实现引导,因为go1.4是c
    ```
 6. 安装go1.5以上任意版本（这里是1.13）
    ```
+   cd /usr/local/go/
    git clone git@github.com:golang/go.git
+   cd go
    git checkout -b release-branch.go1.13 origin   release-branch.go1.13
-   cp -r go /usr/local/go/go1.2
-   cd go1.12/src
+   cd go/src
    ./make.bash
    # 日志如下
    Building Go cmd/dist using /usr/local/go/go1.4.3.
@@ -64,8 +65,8 @@ Go高版本的编译过程需要Go1.4的二进制来实现引导,因为go1.4是c
    Building Go toolchain3 using go_bootstrap and Go toolchain2.
    Building packages and commands for linux/amd64.
    ---
-   Installed Go for linux/amd64 in /usr/local/go/go1.13
-   Installed commands in /usr/local/go/go1.13/bin
+   Installed Go for linux/amd64 in /usr/local/go/go
+   Installed commands in /usr/local/go/go/bin
    ```
 
 ## 配置
