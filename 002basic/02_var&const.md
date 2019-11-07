@@ -121,27 +121,123 @@ func numbers()(int,int,string){
 
 空白标识符 `_` 也被用于抛弃值，如值 5 在`_, b = 5, 7`中被抛弃。
 
-### 全局变量和局部变量，静态动态
+#### 全局变量和局部变量，静态动态
 
 如果全局变量的首字母大写，那么它就是公开的全局变量。如果全局变量的首字母小写，那么它就是内部的全局变量。
 
 go没有c语言的静态变量
 
 
-
-
-### 运算符
-
-
-
-### 字符串
-
-
-
-### 时间日期
-
-
-
-### 指针
-
 ## 常量
+
+#### 定义
+
+关键字 const 修饰的名字为常量，不能被重新赋予任何值。
+
+```go
+package main
+
+func main() {  
+    const a = 55
+    a = 89 //报错
+}
+```
+
+常量的值在编译期间确定。因此不能将函数的返回值赋给常量，因为函数调用发生在运行期。
+
+```go
+package main
+
+import (  
+    "fmt"
+    "math"
+)
+
+func main() {  
+    fmt.Println("Hello, playground")
+    var a = math.Sqrt(4)//allowed
+    const b = math.Sqrt(4)//not allowed
+}
+```
+
+#### 字符串常量
+
+Go是强类型语言。在赋值时混合使用类型是不允许的。让我们通过以下代码说明这是什么意思。
+
+```go
+package main
+
+func main() {  
+    var defaultName = "Sam" //allowed
+    type myString string
+    var customName myString = "Sam" //allowed
+    customName = defaultName //not allowed
+}
+```
+
+#### 布尔常量
+
+布尔常量与字符串常量（在概念上）没有区别。
+
+#### 数值常量
+
+包括整数，浮点数以及复数常量。
+
+```go
+package main
+
+import (  
+    "fmt"
+)
+
+func main() {  
+    fmt.Println("Hello, playground")
+    const a = 5
+    var intVar int = a
+    var int32Var int32 = a
+    var float64Var float64 = a
+    var complex64Var complex64 = a
+    fmt.Println("intVar",intVar, "\nint32Var", int32Var, "\nfloat64Var", float64Var, "\ncomplex64Var",complex64Var)
+}
+```
+
+a 的值是 5 并且 a 在语法上是泛化的（它既可以表示浮点数 `5.0`，也可以表示整数 `5`，甚至可以表示没有虚部的复数 `5 + 0i`）
+
+#### 枚举类型
+
+go语言并没有提供enum的定义，我们可以使用const来模拟枚举类型。
+
+```go
+package main
+
+import  (
+  "fmt"
+)
+
+type PolicyType int32
+
+const (
+    Policy_MIN      PolicyType = 0 
+    Policy_MAX      PolicyType = 1 
+    Policy_MID      PolicyType = 2 
+    Policy_AVG      PolicyType = 3 
+)
+
+func (p PolicyType) String() string {
+    switch (p) {
+    case Policy_MIN: return "MIN"
+    case Policy_MAX: return "MAX"
+    case Policy_MID: return "MID"
+    case Policy_AVG: return "AVG"
+    default:         return "UNKNOWN"
+    }
+}
+
+func foo(p PolicyType) {
+    fmt.Printf("enum value: %v\n", p)
+}
+
+func main() {
+    foo(Policy_MAX)
+}
+```
