@@ -54,7 +54,7 @@ Go高版本的编译过程需要Go1.4的二进制来实现引导,因为go1.4是c
    cd /usr/local/go/
    git clone git@github.com:golang/go.git
    cd go
-   git checkout -b release-branch.go1.13 origin   release-branch.go1.13
+   git checkout -b release-branch.go1.13-security origin/release-branch.go1.13-security
    cd go/src
    ./make.bash
    # 日志如下
